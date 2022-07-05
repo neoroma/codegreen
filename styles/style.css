@@ -2,6 +2,15 @@
   --bgBlack: #202124;
   --bgGreen: #209F56;
   --fgWhite: #F2F2F2;
+  --logoWidth: 604px;
+  --infoHeight: 104px;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --logoWidth: 90%;
+    --infoHeight: 10%;
+  }
 }
 
 * {
@@ -42,9 +51,13 @@ section.main-section {
   align-items: center;
 }
 
+.main-section>img {
+  width: var(--logoWidth);
+}
+
 p.small-info {
-  width: 604px;
-  height: 104px;
+  width: var(--logoWidth);
+  height: var(--infoHeight);
   display: flex;
   justify-content: end;
   align-items: end;
