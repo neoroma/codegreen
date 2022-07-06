@@ -32,11 +32,11 @@ main>section {
 }
 
 main>section:first-child {
-  visibility: var(--topDecorationVisibility);
+  visibility: var(--topDecorationVisibility, hidden);
 }
 
 main>section:last-child {
-  visibility: var(--bottomDecorationVisibility);
+  visibility: var(--bottomDecorationVisibility, hidden);
 }
 
 .decorative {
