@@ -4,13 +4,8 @@
   --fgWhite: #F2F2F2;
   --logoWidth: 604px;
   --infoHeight: 104px;
-}
-
-@media only screen and (max-width: 600px) {
-  :root {
-    --logoWidth: 90%;
-    --infoHeight: 10%;
-  }
+  --topDecorationVisibility: hidden;
+  --bottomDecorationVisibility: visible;
 }
 
 * {
@@ -37,7 +32,11 @@ main>section {
 }
 
 main>section:first-child {
-  background-color: initial;
+  visibility: var(--topDecorationVisibility);
+}
+
+main>section:last-child {
+  visibility: var(--bottomDecorationVisibility);
 }
 
 .decorative {
