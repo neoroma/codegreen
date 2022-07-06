@@ -1,0 +1,7 @@
+:root {
+  --bgBlack: white;
+  --bgGreen: #209F56;
+  --fgWhite: black;
+  --topDecorationVisibility: hidden;
+  --bottomDecorationVisibility: visible;
+}
