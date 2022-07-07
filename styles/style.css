@@ -18,7 +18,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 40rem) {
   :root {
     --logoWidth: 90%;
     --infoHeight: 10%;
