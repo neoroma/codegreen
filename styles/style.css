@@ -6,12 +6,31 @@
   --infoHeight: 104px;
   --topDecorationVisibility: hidden;
   --bottomDecorationVisibility: visible;
+  --ff-primary: 'Fira Sans Condensed', sans-serif;
+}
+
+@media print {
+  :root {
+    --bgBlack: white;
+    --fgWhite: black;
+    --topDecorationVisibility: hidden;
+    --bottomDecorationVisibility: visible;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  :root {
+    --logoWidth: 90%;
+    --infoHeight: 10%;
+    --topDecorationVisibility: visible;
+    --bottomDecorationVisibility: hidden;
+  }
 }
 
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: var(--ff-primary);
 }
 
 body {
